@@ -15,7 +15,9 @@ Statische Website (HTML/CSS/JS, ohne Build-Schritt) nach den Vorgaben in [`DESIG
 
 ## Vor dem Livegang offen
 
-- [ ] Bild-Platzhalter (`.photo--placeholder`) durch eigene Fotos ersetzen (WebP/AVIF, `loading="lazy"` ausser Hero)
+- [x] Projektfotos eingebaut (`assets/img/projekte/`, ohne EXIF-Daten)
+- [ ] Vorher-Nachher: passendes Fotopaar (gleicher Standort und Ausschnitt) fehlt noch
+- [ ] Schriftliche Erlaubnis der Auftraggeber für alle gezeigten Objekte bestätigen
 - [ ] Referenztexte durch echte Projekte ersetzen (nur mit Erlaubnis der Auftraggeber)
 - [ ] E-Mail-Adresse prüfen (aktuell Platzhalter `info@huellwerk.ch`)
 - [ ] Formular-Endpunkt im `action`-Attribut von `#offer-form` eintragen (z. B. Formspree oder eigenes PHP-Skript)

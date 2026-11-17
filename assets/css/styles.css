@@ -128,7 +128,7 @@ h3 { font-size: 20px; margin-bottom: var(--s-2); }
 
 .header {
   position: sticky; top: 0; z-index: 100;
-  background: rgba(245, 243, 238, .97);
+  background: var(--color-bg);
   border-bottom: 1px solid transparent;
   transition: border-color .2s var(--ease);
 }
