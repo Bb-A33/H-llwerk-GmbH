@@ -2,7 +2,7 @@
 
 Design-System für die Website der Hüllwerk GmbH (Menzingen ZG).
 Fachbetrieb für die Gebäudehülle: Fassaden, Dämmung, Oberflächen.
-Einzugsgebiet: Zürich, Zug, Schwyz. Sprache der Website: Deutsch (Schweiz), Sie-Form, kein «ß».
+Einsatzgebiet: ganze Schweiz (Sitz in Menzingen ZG). Sprache der Website: Deutsch (Schweiz), Sie-Form, kein «ß».
 
 Alle UI-Arbeiten in diesem Projekt halten sich an diese Datei.
 
@@ -22,14 +22,14 @@ Stichworte: sachlich · solide · warm-neutral · ehrlich · schweizerisch präz
 
 ## 2. Farben
 
-Werte sind aus dem Logo geschätzt. Mit der Original-Logodatei abgleichen und hier aktualisieren.
+Werte mit der Original-Logodatei abgeglichen (`assets/img/logo/`). Logo-Anthrazit: Balken `#2B3034`, Schriftzug `#171D21`; Taupe `#B5A592`.
 
 | Token | Wert | Verwendung |
 |---|---|---|
 | `--color-ink` | `#262B30` | Anthrazit. Haupttext, Titel, Kopf- und Fusszeile, dunkle Flächen |
 | `--color-ink-soft` | `#4A5058` | Sekundärtext, Beschriftungen |
-| `--color-accent` | `#B5A48E` | Beige/Taupe. Knöpfe, Linien, Hervorhebungen, aktive Zustände |
-| `--color-accent-dark` | `#9A8A74` | Hover-Zustand des Akzents |
+| `--color-accent` | `#B5A592` | Beige/Taupe. Knöpfe, Linien, Hervorhebungen, aktive Zustände |
+| `--color-accent-dark` | `#9A8B77` | Hover-Zustand des Akzents |
 | `--color-bg` | `#F5F3EE` | Off-White. Seitenhintergrund |
 | `--color-surface` | `#FFFFFF` | Karten, Formulare |
 | `--color-line` | `#E2DED6` | Trennlinien, Rahmen |
@@ -53,7 +53,7 @@ Regeln:
 | Fliesstext | **Inter** oder **Manrope** | 400, 17–18 px, Zeilenhöhe 1.6 |
 
 Skala (Desktop / Mobil):
-- H1: 56 / 36 px
+- H1: 56 / 32 px
 - H2: 40 / 28 px
 - H3: 24 / 20 px
 - Text: 18 / 17 px
@@ -122,7 +122,8 @@ Regeln:
 
 ## 7. Bilder
 
-- Nur eigene, echte Fotos von Hüllwerk-Arbeiten. Keine Stockfotos von lächelnden Handwerkern.
+- Nur echte Fotos, keine Stockfotos von lächelnden Handwerkern.
+- Solange es noch keine eigenen Hüllwerk-Projekte gibt: Fotos von Fassaden, die das Hüllwerk-Team bei einem früheren Arbeitgeber ausgeführt hat (mit dessen Erlaubnis). Diese immer als Erfahrung des Teams kennzeichnen, nie als Hüllwerk-Projekte ausgeben. Sobald eigene Projekte fertig sind, schrittweise ersetzen.
 - Gerade, architektonische Bildausschnitte, natürliches Tageslicht, Linien ausgerichtet.
 - Keine Adressen, Hausnummern oder erkennbaren Personen ohne Einverständnis.
 - Akkord-Objekte nur mit schriftlicher Erlaubnis des Auftraggebers.

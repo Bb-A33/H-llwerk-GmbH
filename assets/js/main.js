@@ -37,6 +37,12 @@
 
   /* Sanftes Einblenden */
   var reveals = document.querySelectorAll(".reveal");
+  /* Elemente in Rastern leicht gestaffelt einblenden */
+  document.querySelectorAll(".cards, .refs, .steps, .trust, .stages").forEach(function (grid) {
+    grid.querySelectorAll(":scope > .reveal").forEach(function (el, i) {
+      el.style.transitionDelay = (i % 4) * 80 + "ms";
+    });
+  });
   if (reduceMotion || !("IntersectionObserver" in window)) {
     reveals.forEach(function (el) { el.classList.add("is-visible"); });
   } else {
@@ -119,9 +125,9 @@
       } else if (input.type === "file") {
         var files = input.files || [];
         if (files.length > 5) msg = "Bitte laden Sie höchstens 5 Bilder hoch.";
-        for (var i = 0; i < files.length && !msg; i++) {
-          if (files[i].size > 10 * 1024 * 1024) msg = "Das Bild «" + files[i].name + "» ist grösser als 10 MB.";
-        }
+        var total = 0;
+        for (var i = 0; i < files.length; i++) total += files[i].size;
+        if (!msg && total > 8 * 1024 * 1024) msg = "Die Fotos sind zusammen grösser als 8 MB. Bitte weniger oder kleinere Bilder wählen – weitere Fotos können Sie uns per E-Mail senden.";
       } else if (input.required && !v) {
         msg = messages[input.name];
       } else if (input.type === "email" && v && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) {
@@ -189,19 +195,6 @@
         .catch(failure)
         .finally(function () { btn.disabled = false; });
     });
-  }
-
-  /* Mobiler Balken erst nach dem Hero einblenden (ein beiger Knopf pro Bildschirm) */
-  var bar = document.querySelector(".mobile-bar");
-  var hero = document.querySelector(".hero__actions");
-  if (bar && hero && "IntersectionObserver" in window) {
-    bar.style.transition = reduceMotion ? "none" : "transform .2s ease";
-    new IntersectionObserver(function (entries) {
-      var heroVisible = entries[0].isIntersecting;
-      bar.style.transform = heroVisible ? "translateY(110%)" : "none";
-      bar.setAttribute("aria-hidden", heroVisible ? "true" : "false");
-      bar.querySelectorAll("a").forEach(function (a) { a.tabIndex = heroVisible ? -1 : 0; });
-    }).observe(hero);
   }
 
   /* Jahr in der Fusszeile */
