@@ -16,7 +16,7 @@ Statische Website (HTML/CSS/JS, ohne Build-Schritt) nach den Vorgaben in [`DESIG
 ## Vor dem Livegang offen
 
 - [x] Projektfotos eingebaut (`assets/img/projekte/`, ohne EXIF-Daten)
-- [ ] Vorher-Nachher: passendes Fotopaar (gleicher Standort und Ausschnitt) fehlt noch
+- [ ] Vorher-Nachher-Regler: aktuell durch «Bauetappen» ersetzt. Sobald ein Fotopaar vom gleichen Standort vorliegt, kann der Regler (CSS/JS `.compare`) wieder eingesetzt werden
 - [x] Fotos stammen von Projekten des Teams beim früheren Arbeitgeber, Freigabe als Referenz liegt vor (als solche gekennzeichnet)
 - [ ] Eigene Hüllwerk-Projekte fotografieren und Referenzen schrittweise ersetzen
 - [ ] Referenztexte durch echte Projekte ersetzen (nur mit Erlaubnis der Auftraggeber)

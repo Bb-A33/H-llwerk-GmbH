@@ -274,6 +274,12 @@ h3 { font-size: 20px; margin-bottom: var(--s-2); }
 .compare:has(.compare__range:focus-visible) { outline: 2px solid var(--color-ink); outline-offset: 3px; }
 .compare-caption { margin-top: var(--s-3); font-size: 14px; color: var(--color-ink-soft); }
 
+.stages { display: grid; gap: var(--s-4); }
+.stage { margin: 0; }
+.stage .photo { aspect-ratio: 4 / 5; }
+.stage figcaption { padding-top: 12px; font-size: 15px; color: var(--color-ink-soft); }
+.stage figcaption .label { margin-bottom: 4px; }
+
 .split { display: grid; gap: var(--s-6); align-items: center; }
 
 /* ---------- Referenzen ---------- */
@@ -434,6 +440,7 @@ html { scroll-padding-bottom: calc(var(--bar-h) + 16px); }
   .form__grid { grid-template-columns: 1fr 1fr; }
   .field--full { grid-column: 1 / -1; }
   .form__footer .btn { width: auto; }
+  .stages { grid-template-columns: 1fr 1fr; }
   .hero__actions { flex-direction: row; flex-wrap: wrap; }
   .hero__actions .btn { width: auto; }
   .footer__grid { grid-template-columns: repeat(2, 1fr); }
