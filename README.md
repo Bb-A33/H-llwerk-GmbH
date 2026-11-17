@@ -17,7 +17,8 @@ Statische Website (HTML/CSS/JS, ohne Build-Schritt) nach den Vorgaben in [`DESIG
 
 - [x] Projektfotos eingebaut (`assets/img/projekte/`, ohne EXIF-Daten)
 - [ ] Vorher-Nachher: passendes Fotopaar (gleicher Standort und Ausschnitt) fehlt noch
-- [ ] Schriftliche Erlaubnis der Auftraggeber für alle gezeigten Objekte bestätigen
+- [x] Fotos stammen von Projekten des Teams beim früheren Arbeitgeber, Freigabe als Referenz liegt vor (als solche gekennzeichnet)
+- [ ] Eigene Hüllwerk-Projekte fotografieren und Referenzen schrittweise ersetzen
 - [ ] Referenztexte durch echte Projekte ersetzen (nur mit Erlaubnis der Auftraggeber)
 - [ ] E-Mail-Adresse prüfen (aktuell Platzhalter `info@huellwerk.ch`)
 - [ ] Formular-Endpunkt im `action`-Attribut von `#offer-form` eintragen (z. B. Formspree oder eigenes PHP-Skript)

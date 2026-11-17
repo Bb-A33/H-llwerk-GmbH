@@ -383,6 +383,8 @@ h3 { font-size: 20px; margin-bottom: var(--s-2); }
   display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--s-3); font-size: 13px; color: #A9A49A;
 }
 
+.footer__note { margin: var(--s-3) 0 0; font-size: 13px; color: #A9A49A; max-width: 70ch; }
+
 /* ---------- Mobiler Aktionsbalken ---------- */
 
 /* Platz für die fixierte Leiste, damit sie nichts verdeckt */

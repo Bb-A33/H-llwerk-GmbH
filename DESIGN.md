@@ -122,7 +122,8 @@ Regeln:
 
 ## 7. Bilder
 
-- Nur eigene, echte Fotos von Hüllwerk-Arbeiten. Keine Stockfotos von lächelnden Handwerkern.
+- Nur echte Fotos, keine Stockfotos von lächelnden Handwerkern.
+- Solange es noch keine eigenen Hüllwerk-Projekte gibt: Fotos von Fassaden, die das Hüllwerk-Team bei einem früheren Arbeitgeber ausgeführt hat (mit dessen Erlaubnis). Diese immer als Erfahrung des Teams kennzeichnen, nie als Hüllwerk-Projekte ausgeben. Sobald eigene Projekte fertig sind, schrittweise ersetzen.
 - Gerade, architektonische Bildausschnitte, natürliches Tageslicht, Linien ausgerichtet.
 - Keine Adressen, Hausnummern oder erkennbaren Personen ohne Einverständnis.
 - Akkord-Objekte nur mit schriftlicher Erlaubnis des Auftraggebers.
