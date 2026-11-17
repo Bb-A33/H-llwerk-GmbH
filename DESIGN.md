@@ -53,7 +53,7 @@ Regeln:
 | Fliesstext | **Inter** oder **Manrope** | 400, 17–18 px, Zeilenhöhe 1.6 |
 
 Skala (Desktop / Mobil):
-- H1: 56 / 36 px
+- H1: 56 / 32 px
 - H2: 40 / 28 px
 - H3: 24 / 20 px
 - Text: 18 / 17 px
