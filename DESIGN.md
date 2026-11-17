@@ -2,7 +2,7 @@
 
 Design-System für die Website der Hüllwerk GmbH (Menzingen ZG).
 Fachbetrieb für die Gebäudehülle: Fassaden, Dämmung, Oberflächen.
-Einzugsgebiet: Zürich, Zug, Schwyz. Sprache der Website: Deutsch (Schweiz), Sie-Form, kein «ß».
+Einsatzgebiet: ganze Schweiz (Sitz in Menzingen ZG). Sprache der Website: Deutsch (Schweiz), Sie-Form, kein «ß».
 
 Alle UI-Arbeiten in diesem Projekt halten sich an diese Datei.
 

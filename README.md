@@ -4,7 +4,7 @@ Statische Website (HTML/CSS/JS, ohne Build-Schritt) nach den Vorgaben in [`DESIG
 
 ## Struktur
 
-- `index.html` – Startseite: Hero, Leistungen, Vertrauen, Vorher/Nachher, Referenzen, Ablauf, Einzugsgebiet, Offertformular, Kontakt
+- `index.html` – Startseite: Hero, Leistungen, Vertrauen, Vorher/Nachher, Referenzen, Ablauf, Einsatzgebiet, Offertformular, Kontakt
 - `impressum.html`, `datenschutz.html` – rechtliche Seiten (Entwürfe)
 - `assets/css/styles.css` – alle Stile, Farb-Tokens aus DESIGN.md
 - `assets/js/main.js` – Kopfzeile, Mobilmenü, Einblenden, Vorher/Nachher-Regler, Formularprüfung
