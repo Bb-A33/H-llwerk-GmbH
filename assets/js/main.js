@@ -37,6 +37,12 @@
 
   /* Sanftes Einblenden */
   var reveals = document.querySelectorAll(".reveal");
+  /* Elemente in Rastern leicht gestaffelt einblenden */
+  document.querySelectorAll(".cards, .refs, .steps, .trust, .stages").forEach(function (grid) {
+    grid.querySelectorAll(":scope > .reveal").forEach(function (el, i) {
+      el.style.transitionDelay = (i % 4) * 80 + "ms";
+    });
+  });
   if (reduceMotion || !("IntersectionObserver" in window)) {
     reveals.forEach(function (el) { el.classList.add("is-visible"); });
   } else {
