@@ -125,9 +125,9 @@
       } else if (input.type === "file") {
         var files = input.files || [];
         if (files.length > 5) msg = "Bitte laden Sie höchstens 5 Bilder hoch.";
-        for (var i = 0; i < files.length && !msg; i++) {
-          if (files[i].size > 10 * 1024 * 1024) msg = "Das Bild «" + files[i].name + "» ist grösser als 10 MB.";
-        }
+        var total = 0;
+        for (var i = 0; i < files.length; i++) total += files[i].size;
+        if (!msg && total > 8 * 1024 * 1024) msg = "Die Fotos sind zusammen grösser als 8 MB. Bitte weniger oder kleinere Bilder wählen – weitere Fotos können Sie uns per E-Mail senden.";
       } else if (input.required && !v) {
         msg = messages[input.name];
       } else if (input.type === "email" && v && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) {
