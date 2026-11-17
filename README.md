@@ -27,7 +27,7 @@ Statische Website (HTML/CSS/JS, ohne Build-Schritt) nach den Vorgaben in [`DESIG
 
 ## Livegang mit Netlify (Empfehlung)
 
-1. Konto auf netlify.com erstellen, «Add new site» → «Import from Git» → dieses GitHub-Repository, Branch `main`. Kein Build-Befehl, Veröffentlichungsordner: `/`.
+1. Konto auf netlify.com erstellen, «Import a Git repository» → GitHub → dieses Repository, Branch `main`. Build-Einstellungen kommen automatisch aus `netlify.toml` (veröffentlicht nur die Website-Dateien aus `dist/`).
 2. Unter «Forms» die Formularerkennung aktivieren, danach unter «Form notifications» eine E-Mail-Benachrichtigung an info@huellwerk.com einrichten.
 3. Unter «Domain management» `huellwerk.com` hinzufügen. Netlify zeigt die DNS-Einträge an, die gesetzt werden müssen.
 4. Die Domain wurde über Google Workspace gekauft; die DNS-Verwaltung liegt meist bei Squarespace Domains (vorher Google Domains). Dort die von Netlify angegebenen Einträge für `huellwerk.com` und `www` setzen.
