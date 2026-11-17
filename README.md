@@ -19,6 +19,6 @@ Statische Website (HTML/CSS/JS, ohne Build-Schritt) nach den Vorgaben in [`DESIG
 - [ ] Referenztexte durch echte Projekte ersetzen (nur mit Erlaubnis der Auftraggeber)
 - [ ] E-Mail-Adresse prüfen (aktuell Platzhalter `info@huellwerk.ch`)
 - [ ] Formular-Endpunkt im `action`-Attribut von `#offer-form` eintragen (z. B. Formspree oder eigenes PHP-Skript)
-- [ ] Logo-SVG und Farbwerte mit der Original-Logodatei abgleichen
+- [x] Original-Logo eingebunden (`assets/img/logo/`), Farben abgeglichen
 - [ ] Impressum: Name der Geschäftsführung ergänzen; Datenschutzerklärung rechtlich prüfen
 - [ ] Optional: Schriften lokal einbinden statt über Google Fonts

@@ -22,14 +22,14 @@ Stichworte: sachlich · solide · warm-neutral · ehrlich · schweizerisch präz
 
 ## 2. Farben
 
-Werte sind aus dem Logo geschätzt. Mit der Original-Logodatei abgleichen und hier aktualisieren.
+Werte mit der Original-Logodatei abgeglichen (`assets/img/logo/`). Logo-Anthrazit: Balken `#2B3034`, Schriftzug `#171D21`; Taupe `#B5A592`.
 
 | Token | Wert | Verwendung |
 |---|---|---|
 | `--color-ink` | `#262B30` | Anthrazit. Haupttext, Titel, Kopf- und Fusszeile, dunkle Flächen |
 | `--color-ink-soft` | `#4A5058` | Sekundärtext, Beschriftungen |
-| `--color-accent` | `#B5A48E` | Beige/Taupe. Knöpfe, Linien, Hervorhebungen, aktive Zustände |
-| `--color-accent-dark` | `#9A8A74` | Hover-Zustand des Akzents |
+| `--color-accent` | `#B5A592` | Beige/Taupe. Knöpfe, Linien, Hervorhebungen, aktive Zustände |
+| `--color-accent-dark` | `#9A8B77` | Hover-Zustand des Akzents |
 | `--color-bg` | `#F5F3EE` | Off-White. Seitenhintergrund |
 | `--color-surface` | `#FFFFFF` | Karten, Formulare |
 | `--color-line` | `#E2DED6` | Trennlinien, Rahmen |

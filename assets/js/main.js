@@ -191,19 +191,6 @@
     });
   }
 
-  /* Mobiler Balken erst nach dem Hero einblenden (ein beiger Knopf pro Bildschirm) */
-  var bar = document.querySelector(".mobile-bar");
-  var hero = document.querySelector(".hero__actions");
-  if (bar && hero && "IntersectionObserver" in window) {
-    bar.style.transition = reduceMotion ? "none" : "transform .2s ease";
-    new IntersectionObserver(function (entries) {
-      var heroVisible = entries[0].isIntersecting;
-      bar.style.transform = heroVisible ? "translateY(110%)" : "none";
-      bar.setAttribute("aria-hidden", heroVisible ? "true" : "false");
-      bar.querySelectorAll("a").forEach(function (a) { a.tabIndex = heroVisible ? -1 : 0; });
-    }).observe(hero);
-  }
-
   /* Jahr in der Fusszeile */
   var year = document.querySelector("[data-year]");
   if (year) year.textContent = new Date().getFullYear();
