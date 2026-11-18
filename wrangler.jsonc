@@ -1,0 +1,11 @@
+// Cloudflare Workers (statische Website): nur dist/ veröffentlichen, das build.sh erzeugt.
+{
+  "name": "h-llwerk-gmbh",
+  "compatibility_date": "2025-11-01",
+  "build": { "command": "sh build.sh" },
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  }
+}
