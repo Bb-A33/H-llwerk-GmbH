@@ -25,13 +25,13 @@ Statische Website (HTML/CSS/JS, ohne Build-Schritt) nach den Vorgaben in [`DESIG
 - [ ] Originalfotos in voller Auflösung nachliefern (schärferes Hero-Bild)
 - [ ] Eigene Hüllwerk-Projekte fotografieren und Referenzen schrittweise ersetzen; Vorher-Nachher-Paar vom gleichen Standort
 
-## Livegang mit Netlify (Empfehlung)
+## Hosting: Cloudflare Pages
 
-1. Konto auf netlify.com erstellen, «Import a Git repository» → GitHub → dieses Repository, Branch `main`. Build-Einstellungen kommen automatisch aus `netlify.toml` (veröffentlicht nur die Website-Dateien aus `dist/`).
-2. Unter «Forms» die Formularerkennung aktivieren, danach unter «Form notifications» eine E-Mail-Benachrichtigung an info@huellwerk.com einrichten.
-3. Unter «Domain management» `huellwerk.com` hinzufügen. Netlify zeigt die DNS-Einträge an, die gesetzt werden müssen.
-4. Die Domain wurde über Google Workspace gekauft; die DNS-Verwaltung liegt meist bei Squarespace Domains (vorher Google Domains). Dort die von Netlify angegebenen Einträge für `huellwerk.com` und `www` setzen.
-   **Wichtig:** Die MX-Einträge von Google Workspace (E-Mail) nicht löschen oder ändern, sonst kommen keine E-Mails mehr an.
-5. HTTPS stellt Netlify automatisch aus. Danach Formular einmal mit einer echten Testanfrage prüfen.
+Netlify blendet im Gratis-Angebot eigene Werbung ein, deshalb Cloudflare Pages.
 
-Lokal testen: `python3 -m http.server` im Projektordner. Das Formular meldet lokal einen Fehler, weil dort kein Formulardienst läuft.
+- Build-Befehl: `sh build.sh` · Ausgabeordner: `dist` (enthält nur die Website-Dateien)
+- Sicherheits- und Cache-Header: `_headers`
+- Formular: FormSubmit (`action` in `index.html`), Weiterleitung auf `danke.html`. Die erste Anfrage löst eine Bestätigungs-Mail an info@huellwerk.com aus, die einmal bestätigt werden muss.
+- DNS bei Squarespace: Netlify-Einträge durch die von Cloudflare angezeigten ersetzen. MX-, SPF- und Google-Einträge nie ändern.
+
+Lokal testen: `python3 -m http.server` im Projektordner.

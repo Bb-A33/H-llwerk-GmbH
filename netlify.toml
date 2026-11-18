@@ -1,6 +1,6 @@
 # Netlify: nur die Website-Dateien veröffentlichen (keine internen Dateien wie DESIGN.md, README.md, .claude)
 [build]
-  command = "rm -rf dist && mkdir dist && cp -r index.html impressum.html datenschutz.html danke.html 404.html robots.txt sitemap.xml assets dist/"
+  command = "sh build.sh"
   publish = "dist"
 
 [[headers]]

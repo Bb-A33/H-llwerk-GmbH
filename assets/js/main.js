@@ -168,34 +168,20 @@
         return;
       }
 
-      var endpoint = form.getAttribute("action");
+      /* Gültig: normal absenden. Der Formulardienst leitet danach auf danke.html weiter.
+         (Normales Absenden statt fetch, damit Foto-Anhänge zuverlässig mitgehen.) */
       var btn = form.querySelector('button[type="submit"]');
-
-      function success() {
-        form.reset();
-        status.className = "form__status is-success";
-        status.textContent = "Vielen Dank. Ihre Anfrage ist bei uns eingegangen – wir melden uns rasch bei Ihnen.";
-        status.focus();
-      }
-      function failure() {
-        status.className = "form__status is-error";
-        status.textContent = "Das Senden hat leider nicht geklappt. Bitte rufen Sie uns an: 076 445 52 76.";
-        status.focus();
-      }
-
-      /* Ohne hinterlegten Endpunkt (action="#") wird nur lokal bestätigt. */
-      if (!endpoint || endpoint === "#") {
-        success();
-        return;
-      }
-
       btn.disabled = true;
-      fetch(endpoint, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
-        .then(function (res) { if (res.ok) success(); else failure(); })
-        .catch(failure)
-        .finally(function () { btn.disabled = false; });
+      btn.textContent = "Wird gesendet …";
+      form.submit();
     });
   }
+
+  /* Zurück-Taste nach dem Absenden: Knopf wieder freigeben */
+  window.addEventListener("pageshow", function () {
+    var b = document.querySelector('#offer-form button[type="submit"]');
+    if (b && b.disabled) { b.disabled = false; b.textContent = "Kostenlose Offerte anfragen"; }
+  });
 
   /* Jahr in der Fusszeile */
   var year = document.querySelector("[data-year]");
