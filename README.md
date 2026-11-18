@@ -25,13 +25,14 @@ Statische Website (HTML/CSS/JS, ohne Build-Schritt) nach den Vorgaben in [`DESIG
 - [ ] Originalfotos in voller Auflösung nachliefern (schärferes Hero-Bild)
 - [ ] Eigene Hüllwerk-Projekte fotografieren und Referenzen schrittweise ersetzen; Vorher-Nachher-Paar vom gleichen Standort
 
-## Hosting: Cloudflare Pages
+## Hosting: Cloudflare
 
-Netlify blendet im Gratis-Angebot eigene Werbung ein, deshalb Cloudflare Pages.
+Live unter https://huellwerk.com (Cloudflare Workers, statische Dateien). Netlify wurde verlassen, weil es im Gratis-Angebot Werbung einblendet.
 
 - Cloudflare Workers mit statischen Dateien: `wrangler.jsonc` führt `build.sh` aus und veröffentlicht nur `dist/` (keine internen Dateien)
 - Sicherheits- und Cache-Header: `_headers`
 - Formular: FormSubmit (`action` in `index.html`), Weiterleitung auf `danke.html`. Die erste Anfrage löst eine Bestätigungs-Mail an info@huellwerk.com aus, die einmal bestätigt werden muss.
-- DNS bei Squarespace: Netlify-Einträge durch die von Cloudflare angezeigten ersetzen. MX-, SPF- und Google-Einträge nie ändern.
+- Domain registriert bei Squarespace, Nameserver bei Cloudflare (kanye/sierra.ns.cloudflare.com). DNS wird bei Cloudflare verwaltet. MX-, SPF- und Google-Einträge nie ändern.
+- `_redirects`: www.huellwerk.com → huellwerk.com
 
 Lokal testen: `python3 -m http.server` im Projektordner.

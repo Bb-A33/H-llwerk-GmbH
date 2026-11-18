@@ -3,4 +3,4 @@
 set -e
 rm -rf dist
 mkdir dist
-cp -r index.html impressum.html datenschutz.html danke.html 404.html robots.txt sitemap.xml _headers assets dist/
+cp -r index.html impressum.html datenschutz.html danke.html 404.html robots.txt sitemap.xml _headers _redirects assets dist/
