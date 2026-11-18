@@ -29,7 +29,7 @@ Statische Website (HTML/CSS/JS, ohne Build-Schritt) nach den Vorgaben in [`DESIG
 
 Netlify blendet im Gratis-Angebot eigene Werbung ein, deshalb Cloudflare Pages.
 
-- Build-Befehl: `sh build.sh` · Ausgabeordner: `dist` (enthält nur die Website-Dateien)
+- Cloudflare Workers mit statischen Dateien: `wrangler.jsonc` führt `build.sh` aus und veröffentlicht nur `dist/` (keine internen Dateien)
 - Sicherheits- und Cache-Header: `_headers`
 - Formular: FormSubmit (`action` in `index.html`), Weiterleitung auf `danke.html`. Die erste Anfrage löst eine Bestätigungs-Mail an info@huellwerk.com aus, die einmal bestätigt werden muss.
 - DNS bei Squarespace: Netlify-Einträge durch die von Cloudflare angezeigten ersetzen. MX-, SPF- und Google-Einträge nie ändern.
